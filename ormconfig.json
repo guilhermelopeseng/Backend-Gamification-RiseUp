@@ -1,10 +1,9 @@
 {
-  "type": "postgres",
-  "host": "localhost",
-  "port": 5432,
-  "username": "postgres",
+  "type": "mysql",
+  "host": "mysql742.umbler.com",
+  "username": "guilhermedev",
   "password": "riseupgp",
-  "database": "postgres",
+  "database": "src",
   "entities": [
     "./src/models/*.ts"
   ],

@@ -159,6 +159,11 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
+"@types/uuid@8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.0.tgz#215c231dff736d5ba92410e6d602050cce7e273f"
+  integrity sha512-eQ9qFW/fhfGJF8WKHGEHZEyVWfZxrT+6CLIJGBcZPfxUh/+BnEj+UCGYMlr9qZuX/2AltsvwrGqp0LhEW8D0zQ==
+
 "@typescript-eslint/eslint-plugin@^4.11.0":
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.11.0.tgz#bc6c1e4175c0cf42083da4314f7931ad12f731cc"
@@ -380,6 +385,11 @@ bcryptjs@^2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
   integrity sha1-mrVie5PmBiH/fNrF2pczAn3x0Ms=
+
+bignumber.js@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.0.tgz#805880f84a329b5eac6e7cb6f8274b6d82bdf075"
+  integrity sha512-t/OYhhJ2SD+YGBQcjY8GzzDHEk9f3nerxjtfa6tlMXfe7frs/WozhvCNoGvpM0P3bNf3Gq5ZRMlGr5f3r4/N8A==
 
 binary-extensions@^2.0.0:
   version "2.1.0"
@@ -1683,6 +1693,16 @@ multer@^1.4.2:
     type-is "^1.6.4"
     xtend "^4.0.0"
 
+mysql@^2.18.1:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/mysql/-/mysql-2.18.1.tgz#2254143855c5a8c73825e4522baf2ea021766717"
+  integrity sha512-Bca+gk2YWmqp2Uf6k5NFEurwY/0td0cpebAucFpY/3jhrwrVGuxU2uQFCHjU19SJfje0yQvi+rVWdq78hR5lig==
+  dependencies:
+    bignumber.js "9.0.0"
+    readable-stream "2.3.7"
+    safe-buffer "5.1.2"
+    sqlstring "2.3.1"
+
 mz@^2.4.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
@@ -2136,7 +2156,7 @@ readable-stream@1.1.x:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@^2.2.2:
+readable-stream@2.3.7, readable-stream@^2.2.2:
   version "2.3.7"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
   integrity sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==
@@ -2397,6 +2417,11 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
+
+sqlstring@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/sqlstring/-/sqlstring-2.3.1.tgz#475393ff9e91479aea62dcaf0ca3d14983a7fb40"
+  integrity sha1-R1OT/56RR5rqYtyvDKPRSYOn+0A=
 
 "statuses@>= 1.5.0 < 2", statuses@~1.5.0:
   version "1.5.0"
@@ -2699,6 +2724,19 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+uuid@8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+uuidv4@^6.2.6:
+  version "6.2.6"
+  resolved "https://registry.yarnpkg.com/uuidv4/-/uuidv4-6.2.6.tgz#c37c764b578114b60bdd5460e5578d7d99383ad1"
+  integrity sha512-vFyL4jugB/ln1ux1gXLlBMBv424Dn86EaBMoqUH1K6XI3XuriaWLeRUzH4iWwPu+BOJiw4hc4TjvrPmk+H+ZBQ==
+  dependencies:
+    "@types/uuid" "8.3.0"
+    uuid "8.3.2"
 
 v8-compile-cache@^2.0.3:
   version "2.2.0"

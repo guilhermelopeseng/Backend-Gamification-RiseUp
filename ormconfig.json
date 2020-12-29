@@ -1,7 +1,8 @@
 {
   "type": "mysql",
-  "host": "mysql742.umbler.com",
-  "username": "guilhermedev",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
   "password": "riseupgp",
   "database": "src",
   "entities": [

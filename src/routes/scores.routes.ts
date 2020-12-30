@@ -10,16 +10,17 @@ const scoresRouter = Router();
 scoresRouter.use(ensureAuthenticated);
 
 scoresRouter.get('/', async (request, response) => {
+  const { id } = request.user;
   const scoresRepository = getRepository(Scores);
 
-  const scores = await scoresRepository.find();
+  const scores = await scoresRepository.find({ where: { user_id: id } });
 
   return response.json(scores);
 });
 
 scoresRouter.post('/', async (request, response) => {
   const { id } = request.user;
-  const { points, score_date } = request.body;
+  const { points, score_date, title } = request.body;
 
   const scoreCreate = new CreateScoreService();
 
@@ -27,6 +28,7 @@ scoresRouter.post('/', async (request, response) => {
     id,
     points,
     score_date,
+    title,
   });
 
   return response.json(score);

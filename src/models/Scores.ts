@@ -21,6 +21,9 @@ class Scores {
   @JoinColumn({ name: 'user_id' })
   user: User;
 
+  @Column()
+  title: string;
+
   @Column('real')
   points: number;
 
